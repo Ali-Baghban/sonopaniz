@@ -1,8 +1,8 @@
 from django.db import models
 
 class ExampleModel(models.Model):
-    caption = models.CharField(max_length=150,blank=True)
-    photo   = models.ImageField(upload_to='application/%Y/%m/%d/')
+    caption = models.CharField(max_length=150,blank=False)
+    photo   = models.ImageField(upload_to='application/%Y/%m/%d/', blank=False)
 
 
 class AboutModel(models.Model):

@@ -65,55 +65,58 @@ https://www.tooplate.com/view/2097-pop
                             <p>New HTML Template with pop up pages and use this layout for your website</p>        
                         </div>                        
                     </div>
+
+                    <!-- windows section -->
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <div class="content">
                             <div class="grid">
-                                
+                                <!-- About Section -->
 								<div class="grid__item" id="team-link">
                                     <div class="product">
                                         <div class="tm-nav-link">
                                             <i class="fas fa-id-card fa-3x tm-nav-icon"></i>
                                             <span class="tm-nav-text">درباره من</span>
                                             <div class="product__bg"></div>            
-                                        </div>                                     
+                                        </div>
+                                        {% if about %}                                     
                                         <div class="product__description">
                                             <div class="p-sm-4 p-2">
                                                 <div class="row mb-3">
                                                     <div class="col-12">
-                                                        <h2 class="tm-page-title">Background of Our Team</h2>        
+                                                        <h2 class="tm-page-title">{{ about.name }}</h2>        
                                                     </div>
                                                 </div>
                                                 <div class="row tm-reverse-sm">
                                                     <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                                                        <p class="mb-4">Vestibulum aliquet, arcu accumsan lobortis bibendum, justo velit efficitur lorem, at pulvinar mi justo nec lacus. Nullam et libero aliquet, luctus nunc sit amet, tincidunt ligula. Sed finibus ante sed tortor cursus, nec malesuada lectus interdum.</p>
-                                                        <p class="mb-4">Sed ex turpis, vulputate in efficitur id, lobortis eget nibh. Pellentesque maximus ipsum eget velit imperdiet sodales. Suspendisse in blandit mi.</p>
-                                                        <p class="mb-5">Pellentesque finibus felis risus, ut malesuada felis viverra at. Quisque accumsan in mi non hendrerit.</p>
-                                                        <div class="container">
-  <div class="row">
-    <div class="col-sm">
-      <i class="fas fa-id-card fa-3x tm-nav-icon"></i>
-    </div>
-    <div class="col-sm">
-      <i class="fas fa-id-card fa-3x tm-nav-icon"></i>
-    </div>
-    <div class="col-sm">
-      <i class="fas fa-id-card fa-3x tm-nav-icon"></i>
-    </div>
-	<div class="col-sm">
-      <i class="fab fa-instagram fa-3x tm-nav-icon"></i>
-    </div>
-  </div>
-</div>
+                                                        <p class="mb-4">{{ about.description }}</p>
+                                                        
+                                                            <div class="row text-center">
+                                                                <div class="col-sm-3">
+                                                                    <a href="http://instagram.com/{{ about.instagram }}" style="color: plum;"><i class="fab fa-3x fa-instagram"></i></a>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <a href="https://api.whatsapp.com/send?phone={{ about.whatsapp }}" class="text-success"><i class="fab fa-3x fa-whatsapp"></i></a>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <a href="https://t.me/{{ about.telegram }}" class="text-primary"><i class="fab fa-3x fa-telegram"></i></a>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <a href="tel:{{ about.phone }}" class="text-warning" ><i class="fas fa-3x fa-phone-volume"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        
 														
                                                     </div>                                                
                                                     <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 mb-lg-0 mb-sm-4 mb-4">
-                                                        <img src="img/profile/1.jpg" class="img-fluid">
+                                                        <img src="{{ about.photo.url }}" class="img-fluid">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        {% endif %}
                                     </div>
                                 </div>
+                                <!-- End About section -->
                                 <!--
 								<div class="grid__item" id="home-link">
                                     <div class="product">
