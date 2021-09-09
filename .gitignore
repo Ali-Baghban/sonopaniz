@@ -8,7 +8,7 @@ env.bak/
 venv.bak/
 #folders
 zicco/
-
+idpay/
 .vscode
 settings.json
 *.log
