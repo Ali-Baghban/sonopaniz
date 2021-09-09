@@ -4,8 +4,12 @@ from .models import *
 class AboutAdmin(admin.ModelAdmin):
     empty_value_display = '-Empty-'
 
-admin.site.register(AboutModel, AboutAdmin)
+admin.site.register(About, AboutAdmin)
 
 class ExampleAdmin(admin.ModelAdmin):
     pass
-admin.site.register(ExampleModel,ExampleAdmin)
+admin.site.register(Example,ExampleAdmin)
+
+class SettingAdmin(admin.ModelAdmin):
+    pass
+admin.site.register(Setting, SettingAdmin)

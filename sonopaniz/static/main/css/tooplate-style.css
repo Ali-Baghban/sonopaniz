@@ -1,19 +1,18 @@
 /* font-Jadidbold */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Playfair+Display:ital,wght@1,500&display=swap');
 @font-face {
-      font-family: Jadidbold;
-      src: url('http://fonts.codearena.ir/b/jadidbold/jadidbold.eot');
-      src: url('http://fonts.codearena.ir/b/jadidbold/jadidbold.eot?#iefix') format('embedded-opentype'),
-           url('http://fonts.codearena.ir/b/jadidbold/jadidbold.woff') format('woff'),
-           url('http://fonts.codearena.ir/b/jadidbold/jadidbold.ttf') format('truetype');
-      font-weight: normal;
-    }  
+  font-family: Shabnam;
+  src: url('./fonts/Shabnam.eot');
+  src: url('./fonts/Shabnam.woff') format('woff');     
+  font-weight:900;
+  font-style: normal;
+}
 
 body {
   
-  font-family:  'Cinzel', Jadidbold;
-  font-size: 19px;
-  font-weight: 300;
+  font-family:  'Cinzel', Shabnam;
+  font-size: 20px;
+  font-weight: 800;
   color: white;
   position: relative;
   

@@ -1,0 +1,48 @@
+  
+{% extends 'admin/base.html' %}
+{% load static %}
+{% block extrastyle %}
+<style>
+    #header {
+    background: #10284e;
+    color: #ffffff;
+}
+#branding h1{
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+.module h2, .module caption, .inline-group h2 {
+    background:#30caa0; ;
+}
+div.breadcrumbs{
+    background: #30caa0;
+}
+.button, input[type=submit], input[type=button], .submit-row input, a.button{
+    background: #10284e;
+    color: #ffffff;
+}
+body.login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../static/main/img/background/bg-login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.dashboard #content {
+    width: 70%;
+}
+</style>
+{% endblock %}
+{% block branding %}
+    <h1 id="head">
+        Sonopaniz.ir
+    </h1>
+{% endblock %}
