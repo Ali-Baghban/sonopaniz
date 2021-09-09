@@ -8,6 +8,7 @@ env.bak/
 venv.bak/
 #folders
 zicco/
+
 .vscode
 settings.json
 *.log
